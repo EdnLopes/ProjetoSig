@@ -1,10 +1,123 @@
-<!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="pt-br" ng-app="crudProjetoSig">
   <head>
     <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-  </head>
-  <body>
 
+    <title>CRUD Projeto SIG</title>
+    <link rel="stylesheet"  type="text/css" href="bower_components/angular-material/angular-material.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+
+    <script>
+        angular.module('crudProjetoSig', ['ngMaterial'])
+
+            .controller('AppCtrl', function($scope) {
+                $scope.states = ('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS ' +
+                    'MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI ' +
+                    'WY').split(' ').map(function(state) {
+                        return {abbrev: state};
+                      });
+               });
+    </script>
+   </head>
+ <body >
+
+    <div ng-controller="AppCtrl" >
+
+        <md-toolbar class="md-hue-2">
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings">
+              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+            <h2>
+              <span>CRUD Projeto SIG</span>
+            </h2>
+            <span flex></span>
+            <img src="img/icons/tendencia.png" alt="Bookmark">
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+
+        <div layout-gt-sm="row">
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <h3 style="color:#000080">Configuração de Envio</h3>
+        </div>
+
+        <div layout-gt-sm="row">
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Nome:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Url:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+        </div>
+
+        <div layout-gt-sm="row">
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="XmlRaiz:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Path:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+        </div>
+
+        <div layout-gt-sm="row">
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container class="md-block" flex="30">
+                <label>State</label>
+                <md-select ng-model="user.state">
+                  <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                    {{state.abbrev}}
+                  </md-option>
+                </md-select>
+              </md-input-container>
+        </div>
+
+   </div>
   </body>
 </html>
