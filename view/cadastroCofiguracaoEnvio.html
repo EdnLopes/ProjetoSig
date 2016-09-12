@@ -1,0 +1,98 @@
+<md-toolbar class="md-hue-2">
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings">
+              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+            <h2>
+              <span>CRUD Projeto SIG</span>
+            </h2>
+            <span flex></span>
+            <img src="img/icons/tendencia.png" alt="Bookmark">
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+
+        <div layout-gt-sm="row">
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <h3 style="color:#000080">Configuração de Envio</h3>
+        </div>
+
+        <div layout-gt-sm="row">
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Nome:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Url:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+        </div>
+
+        <div layout-gt-sm="row">
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="XmlRaiz:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container flex class="md-block" flex-gt-sm>
+              <input ng-model="color" type="text" placeholder="Path:"/>
+            </md-input-container>
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+        </div>
+
+        <div layout-gt-sm="row">
+
+            <div flex="5" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-input-container class="md-block" flex="30">
+                <label>State</label>
+                <md-select ng-model="user.state">
+                  <md-option ng-repeat="state in states" value="{{state.abbrev}}">
+                    {{state.abbrev}}
+                  </md-option>
+                </md-select>
+              </md-input-container>
+        </div>
+        <div layout-gt-sm="row" layout-align="center center">
+
+               <md-button class="md-raised md-primary">Gravar</md-button>
+
+             <div flex="2" hide-xs hide-sm>
+              <!-- Spacer //-->
+            </div>
+
+            <md-button class="md-raised md-primary">Limpar</md-button>
+        </div>

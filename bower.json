@@ -8,12 +8,9 @@
   "dependencies": {
     "angular": "1.5.x",
     "angular-animate": "1.5.x",
-    "angular-mocks": "1.5.x",
-    "angular-resource": "1.5.x",
-    "angular-route": "1.5.x",
-    "bootstrap": "3.3.x",
     "jquery": "2.2.x",
     "angular-material": "1.1.x",
-    "material-design-icons": "^3.0.1"
+    "ng-table": "0.5.4",
+    "bootstrap": "3.3.x"
   }
 }
