@@ -15,29 +15,68 @@
     <script src="bower_components/angular-material/angular-material.min.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
     <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/controllers/crudProjetoSigCtrl.js"></script>
+    <script src="js/services/configuracaoesAPIService.js"></script>
 
 
    </head>
  <body class="container">
-
+    <div class="row">
     <div ng-controller="crudProjetoSigCtrl"  >
 
-        <h3>{{app}}</h3>
+       <md-toolbar class="md-hue-2">
+          <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings">
+              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+            </md-button>
+            <h2>
+              <span>CRUD Projeto SIG</span>
+            </h2>
+            <span flex></span>
+            <img src="img/icons/tendencia.png" alt="Bookmark">
+            <span flex></span>
+            <md-button class="md-icon-button" aria-label="Favorite">
+              <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
 
-       <table ng-table="tableParams" class="table table-bordered" show-filter="true">
+
+<div layout-gt-sm="row">
+        <h3 style="color:#000080"> {{app}}</h3>
+</div>
+        <div layout-gt-sm="row">
+        <md-grid-list md-cols-sm="2" md-cols-md="4" md-cols-lg="8" md-cols-gt-lg="12">
+              <md-grid-tile><h3>Cofigurações</h3></md-grid-tile>
+        </md-grid-list>
+        </div>
+
+      <!--  <div layout-gt-sm="row">
+       <table ng-table="tableParams" class="table table-condensed table-bordered table-striped" show-filter="true">
             <tr ng-repeat="configuracao in $data">
                 <td title="'Nome'" filter="{ nome: 'text'}" sortable="'nome'">
                     {{configuracao.nome}}</td>
                 <td title="'Url'" filter="{ url: 'text'}" sortable="'url'">
                     {{configuracao.url}}</td>
-                <td title="'XmlRaizrl'" filter="{ url: 'text'}" sortable="'xmlRaiz'">
+                <td title="'XmlRaizrl'" filter="{ url: 'text'}">
                     {{configuracao.xmlRaiz}}</td>
-                <td title="'Path'" filter="{ url: 'text'}" sortable="'path'">
+                <td title="'Path'" filter="{ url: 'text'}">
                     {{configuracao.path}}</td>
             </tr>
        </table>
+       </div> -->
+
+
 
     </div>
+    </div>
+
+
+
+
 </body>
 </html>
