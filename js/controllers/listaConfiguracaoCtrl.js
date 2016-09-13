@@ -24,7 +24,6 @@ angular.module('crudProjetoSig')
 
          $scope.edit = function(idx) {
              $scope.item = $scope.tableParams.data[idx];
-             console.log($scope.item.id);
              $location.path("/editarCofiguracaoEnvio/"+$scope.item.id);
          };
 

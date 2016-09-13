@@ -13,12 +13,14 @@ angular.module('crudProjetoSig').factory('configuracaoAPI', function($http) {
    };
 
    var _getItem = function (id) {
+
        var item = $http.get('data.json')
                         .success(function(data) {
+                            for (i = 0; i < data.length; i++) {
+                              console.log(data.configuracao[i].id);
+                            }
                             return data.configuracao;
                      });
-
-      console.log(item);
       return item;
    };
 
