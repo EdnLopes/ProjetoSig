@@ -1,76 +1,18 @@
 {
     "configuracao": [
         {
+            "id": 1,
             "nome" : "SigTimSetor",
             "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
             "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
             "path" : "br.com.tnd.sig.entidade.SigTimSetor"
         },
         {
+            "id": 2,
             "nome" : "SigOiSetor",
             "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
             "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
             "path" : "br.com.tnd.sig.entidade.SigOiSetor"
-        },
-        {
-            "nome" : "SigVivoSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigVivoSetor"
-        },
-        {
-            "nome" : "SigTimSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigTimSetor"
-        },
-        {
-            "nome" : "SigOiSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigOiSetor"
-        },
-        {
-            "nome" : "SigVivoSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigVivoSetor"
-        },
-        {
-            "nome" : "SigTimSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigTimSetor"
-        },
-        {
-            "nome" : "SigOiSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigOiSetor"
-        },
-        {
-            "nome" : "SigVivoSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigVivoSetor"
-        },
-        {
-            "nome" : "SigTimSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigTimSetor"
-        },
-        {
-            "nome" : "SigOiSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigOiSetor"
-        },
-        {
-            "nome" : "SigVivoSetor",
-            "url" : "https://wsinput.redeinova.com.br/sigtim/wsh/setores/servico.asmx?wsdl",
-            "xmlRaiz" : "<Setores xmlns=\"setoresSchema\"></Setores>",
-            "path" : "br.com.tnd.sig.entidade.SigVivoSetor"
         }
     ]
 }

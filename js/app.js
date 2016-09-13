@@ -1,1 +1,1 @@
-angular.module("crudProjetoSig", ['ngMaterial', "ngTable"]);
+angular.module("crudProjetoSig", ['ngMaterial', 'ngTable', 'ngRoute']);

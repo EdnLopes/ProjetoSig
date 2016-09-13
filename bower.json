@@ -11,6 +11,7 @@
     "jquery": "2.2.x",
     "angular-material": "1.1.x",
     "ng-table": "1.0.X",
-    "bootstrap": "3.3.x"
+    "bootstrap": "3.3.x",
+    "angular-route": "1.5.x"
   }
 }
