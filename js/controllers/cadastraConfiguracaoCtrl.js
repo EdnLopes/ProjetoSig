@@ -16,7 +16,6 @@ angular.module('crudProjetoSig')
          delete $scope.item;
          $scope.configuracaoForm.$setPristine();
          $location.path("/listaConfiguracaoEnvio");
-      //    // carregarContatos();
       });
 
     };

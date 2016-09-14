@@ -22,7 +22,7 @@ angular.module("crudProjetoSig").config(function ($routeProvider) {
       templateUrl: "view/cadastroCofiguracaoEnvio.html",
       controller: "editarConfiguracaoCtrl",
       resolve: {
-         configuracao: function (configuracaoAPI) {
+         configuracaoItens: function (configuracaoAPI, $route) {
             return configuracaoAPI.getItems();
          }
       }
