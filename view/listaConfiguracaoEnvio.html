@@ -1,37 +1,39 @@
-<div>
-   <div layout-gt-sm="row">
-      <h3 style="color:#000080"> {{app}}</h3>
+<div class="card-content">
+   <div class="left">
+      <h5 style="color:#4db6ac"> {{app}}</h5>
    </div>
    <div class="row">
-      <table ng-table="tableParams" class="table table-condensed table-bordered table-striped" show-filter="true">
-         <tr ng-repeat="configuracao in $data">
-            <td >
-               <div layout-gt-sm="row">
-                  <md-button ng-click="edit($index)" class="md-icon-button" aria-label="Settings" title="Editar registro.">
-                     <md-icon md-svg-icon="img/icons/edit.svg"></md-icon>
-                  </md-button>
-                  <md-button ng-click="delete($index)" class="md-icon-button" aria-label="Settings" title="Editar registro.">
-                     <md-icon md-svg-icon="img/icons/delete.svg"></md-icon>
-                  </md-button>
-               </div>
-            </td>
-            <td title="'Nome'" filter="{ nome: 'text'}" sortable="'nome'">
-               {{configuracao.nome}}
-            </td>
-            <td title="'Url'" filter="{ url: 'text'}" sortable="'url'">
-               {{configuracao.url}}
-            </td>
-            <td title="'XmlRaizrl'" filter="{ url: 'text'}">
-               {{configuracao.xmlRaiz}}
-            </td>
-            <td title="'Path'" filter="{ url: 'text'}">
-               {{configuracao.path}}
-            </td>
-         </tr>
-      </table>
-   </div>
+      <form class="col s12">
+         <table ng-table="tableParams" class="table table-condensed table-bordered table-striped" show-filter="true">
+            <tr ng-repeat="configuracao in $data">
+               <td title="'Ações'">
 
-   <div layout-gt-sm="row" ng-click="novo()" layout-align="center center">
-      <button class="md-raised md-primary">Novo</button>
+                 <div class="layout-gt-sm-row">
+                     <a ng-click="edit($index)" title="Editar registro." class="btn-floating"><i class="material-icons">edit</i></a>
+                     <div flex="5" hide-xs hide-sm>
+                       <!-- Spacer //-->
+                     </div>
+                     <a ng-click="delete($index)" title="Excluir registro." class="btn-floating"><i class="material-icons">delete</i></a>
+                  </div>
+
+               </td>
+               <td title="'Nome'" filter="{ nome: 'text'}" sortable="'nome'">
+                  {{configuracao.nome}}
+               </td>
+               <td title="'Url'" filter="{ url: 'text'}" sortable="'url'">
+                  {{configuracao.url}}
+               </td>
+               <td title="'XmlRaizrl'" filter="{ url: 'text'}">
+                  {{configuracao.xmlRaiz}}
+               </td>
+               <td title="'Path'" filter="{ url: 'text'}">
+                  {{configuracao.path}}
+               </td>
+            </tr>
+         </table>
+      </form>
+   </div>
+   <div class="card-action center">
+      <a class="waves-effect teal lighten-2 btn" ng-click="novo()"><i class="material-icons left">library_add</i>Novo</a>
    </div>
 </div>

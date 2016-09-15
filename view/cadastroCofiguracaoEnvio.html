@@ -1,82 +1,63 @@
  <div>
-    <form name="configuracaoForm">
-        <div layout-gt-sm="row">
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
-            </div>
-
-            <h3 style="color:#000080">Configuração de Envio</h3>
+    <form name="configuracaoForm" class="col s12">
+        <div class="layout-gt-sm-row">
+            <h5 style="color:#4db6ac">Configuração de Envio</h5>
         </div>
 
-        <div layout-gt-sm="row">
+        <div class="layout-gt-sm-row">
+            <div class="input-field col s6">
+              <input ng-model="item.nome" id="nomeCofiguracao" type="text" class="validate">
+              <label for="nomeCofiguracao">Nome:</label>
+            </div>
+
             <div flex="5" hide-xs hide-sm>
               <!-- Spacer //-->
             </div>
 
-            <md-input-container flex class="md-block" flex-gt-sm>
-              <input ng-model="item.nome" type="text" placeholder="Nome:"/>
-            </md-input-container>
-
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
+            <div class="input-field col s6">
+              <input ng-model="item.url" id="urlCofiguracao" type="text" class="validate">
+              <label for="urlCofiguracao">Url:</label>
             </div>
 
-            <md-input-container flex class="md-block" flex-gt-sm>
-              <input ng-model="item.url" type="text" placeholder="Url:"/>
-            </md-input-container>
-
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
-            </div>
         </div>
 
-        <div layout-gt-sm="row">
+        <div class="layout-gt-sm-row">
+
+            <div class="input-field col s6">
+              <input ng-model="item.xmlRaiz" id="xmlRaizCofiguracao" type="text" class="validate">
+              <label for="xmlRaizCofiguracao">XmlRaiz:</label>
+            </div>
 
             <div flex="5" hide-xs hide-sm>
               <!-- Spacer //-->
             </div>
 
-            <md-input-container flex class="md-block" flex-gt-sm>
-              <input ng-model="item.xmlRaiz" type="text" placeholder="XmlRaiz:"/>
-            </md-input-container>
-
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
+            <div class="input-field col s6">
+              <input ng-model="item.path" id="pathCofiguracao" type="text" class="validate">
+              <label for="pathCofiguracao">Path:</label>
             </div>
 
-            <md-input-container flex class="md-block" flex-gt-sm>
-              <input ng-model="item.path" type="text" placeholder="Path:"/>
-            </md-input-container>
-
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
-            </div>
         </div>
 
-        <div layout-gt-sm="row">
+        <div class="layout-gt-sm-row center">
 
-            <div flex="5" hide-xs hide-sm>
-              <!-- Spacer //-->
-            </div>
+             <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+              </div>
+         </div>
 
-            <md-input-container class="md-block" flex="30">
-                <label>State</label>
-                <md-select ng-model="user.state">
-                  <md-option ng-repeat="state in states" value="{{state.abbrev}}">
-                    {{state.abbrev}}
-                  </md-option>
-                </md-select>
-              </md-input-container>
         </div>
-        <div layout-gt-sm="row" layout-align="center center">
-
-               <md-button ng-click="gravar(item)" class="md-raised md-primary">Gravar</md-button>
-
-             <div flex="2" hide-xs hide-sm>
-              <!-- Spacer //-->
-            </div>
-
-            <md-button ng-click="voltar()" class="md-raised md-primary">Voltar</md-button>
+        <div class="layout-gt-sm-row center">
+           <div class="col s12 push-s5">
+              <a class="waves-effect teal lighten-2 btn" ng-click="gravar(item)"><i class="material-icons left">save</i>Gravar</a>
+              <a class="waves-effect teal lighten-2 btn" ng-click="voltar()"><i class="material-icons left">arrow_back</i>Voltar</a>
+           </div>
         </div>
    </form>
 </div>

@@ -12,6 +12,7 @@
     "angular-material": "1.1.x",
     "ng-table": "1.0.X",
     "bootstrap": "3.3.x",
-    "angular-route": "1.5.x"
+    "angular-route": "1.5.x",
+    "materialize": "0.97.7"
   }
 }
