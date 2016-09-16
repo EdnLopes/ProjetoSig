@@ -3,6 +3,7 @@ angular.module('crudProjetoSig').factory('configuracaoAPI', function($http) {
     var _getItems = function () {
            return $http.get('data.json')
                         .success(function(data) {
+                           setTimeout(function(){ reloadComponentesMaterializeCSS(); }, 100);
                             return data.configuracao;
                      });
       };
@@ -12,6 +13,7 @@ angular.module('crudProjetoSig').factory('configuracaoAPI', function($http) {
       // return $http.post('data.json', item);
       return $http.get('data.json')
                         .success(function(data) {
+                           setTimeout(function(){ reloadComponentesMaterializeCSS(); }, 100);
                             return data.configuracao;
                      });
    };

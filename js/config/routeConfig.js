@@ -11,11 +11,11 @@ angular.module("crudProjetoSig").config(function ($routeProvider) {
 	$routeProvider.when("/cadastroCofiguracaoEnvio", {
 		templateUrl: "view/cadastroCofiguracaoEnvio.html",
 		controller: "cadastraConfiguracaoCtrl",
-	// 	resolve: {
-	// 		operadoras: function (operadorasAPI) {
-	// 			return operadorasAPI.getOperadoras();
-	// 		}
-	// 	}
+		resolve: {
+			configuracaoCad: function (){
+            setTimeout(function(){ reloadComponentesMaterializeCSS(); }, 100);
+         }
+		}
 	});
 
    $routeProvider.when("/editarCofiguracaoEnvio/:id", {
@@ -23,7 +23,7 @@ angular.module("crudProjetoSig").config(function ($routeProvider) {
       controller: "editarConfiguracaoCtrl",
       resolve: {
          configuracaoItens: function (configuracaoAPI, $route) {
-            return configuracaoAPI.getItems();
+             return configuracaoAPI.getItems();
          }
       }
    });
