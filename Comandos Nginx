@@ -1,0 +1,12 @@
+service nginx status
+
+less /etc/nginx/sites-available/default
+
+ls -s /usr/share/nginx/html
+
+sudo ln -s /home/ednaldo/Angular/ProjetoSig projetosig
+
+sudo service nginx start
+
+sudo service nginx stop
+

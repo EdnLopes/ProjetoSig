@@ -12,7 +12,7 @@ angular.module('crudProjetoSig')
          };
 
     $scope.gravar = function(item) {
-      configuracaoAPI.saveItems(item).success(function (data) {
+      configuracaoAPI.salvarItem(item).success(function (data) {
          delete $scope.item;
          $scope.configuracaoForm.$setPristine();
          $location.path("/listaConfiguracaoEnvio");
